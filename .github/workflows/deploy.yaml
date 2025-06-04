@@ -1,9 +1,8 @@
-name : "Deploy GithubActions"  
+name: "Deploy GithubActions"  
 
 on:                           
   push:                   
-  branches: ["main"]
-
+    branches: ["main"]
 
 jobs:                    
   deploy-gitubActions:                             
