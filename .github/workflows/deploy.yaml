@@ -1,14 +1,15 @@
-name : "Deploy GithubActions"  //nombre
+name : "Deploy GithubActions"  
 
-on:                            //Cuando se va a ejecutar
+on:                           
   push:                   
   branches: ["main"]
 
 
 jobs:                    
-  deploy-gitubActions:                                //nombre del job
-    runs-on: ubuntu-latest                            //Donde se va a ejecutar
-    steps:                                            //Pasos a seguir de forma secuencial
+  deploy-gitubActions:                             
+    runs-on: ubuntu-latest                            
+    steps:
+      uses: actions/checkout@v4                                          
       run: echo "Hacemos pull del codigo"
       run: echo "Correr migraciones"
       run: echo "Generar binario"
